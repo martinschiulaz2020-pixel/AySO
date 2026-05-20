@@ -1,0 +1,140 @@
+pwd
+ls
+man ls
+ls -l
+cd repogit/
+ls -l
+cd ..
+ls
+ls -a
+ls -a -l
+ls -la
+pwd
+cd /
+pwd
+ls
+ls -al
+cd etc/
+ls -l
+cd ..
+ls
+cd /
+pwd
+ls
+cd etc/
+ls -la
+cat passwd
+tac passwd
+pwd
+ls
+ls gss
+cd ..
+exit
+vagrant status
+cat /etc/passwd
+sudo useradd martin
+cat /etc/passwd
+ls -l /home/
+su martin
+sudo passwd martin
+whoami
+id
+sudo usermod -s /bin/bash martin
+cat /etc/passwd
+sudo userdel martin
+ps -ef
+su martin
+sudo kill -9 1608
+sudo userdel martin
+sudo useradd -m -s martin
+vagrant halt
+ssh-keygen
+cat $HOME/.ssh/*.pub
+ssh-keygen
+cd
+mkdir repogit
+ls
+$HOME/repogit/
+cd repogit
+cd 200~TP_AySO
+cd TP_AySO
+git clone git@github.com:martinschiulaz2020-pixel/AySO.git
+cd TP_AySO
+cd AySO
+git clone git@github.com:martinschiulaz2020-pixel/AySO.git
+ssh-keygen
+cat $HOME/.ssh/*.pub 
+cd
+mkdir repogit
+$HOME/repogit/
+cd regopit
+cd repogit
+git clone git@github.com:martinschiulaz2020-pixel/AySO.git
+cd AySO/
+pwd
+ls -l
+cat /etc/passwd 
+man grep
+-i
+grep UBUNTU /etc/passwd 
+grep ubuntu /etc/passwd
+grep -i Ubuntu /etc/passwd
+grep ubuntu /etc/passwd | awk -f "{print $2}" > datos_usuario.txt
+grep ubuntu /etc/passwd | awk -F: "{print $2}" > datos_usuario.txt
+ls
+cat datos_usuario.txt 
+grep ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+cat datos_usuario.txt 
+whoami
+echo “Usuario=$(whoami)” >> datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+git config --global user.email "martinschiulaz2020@gmail.com"
+git config --global user.name "martin schiulaz"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n1 > info_pc.txt
+cat info_pc.txt 
+git add .
+git commit -m  “feat: Añadiendo información de CPU”
+git commit -m "feat: Añadiendo información de CPU"
+man grep
+man sort
+grep -v "nologin" /etc/passwd
+grep -v "nologin" /etc/passwd | head -n10
+grep -v "nologin" /etc/passwd | head -n10 | sort -t: -k7
+grep -v "nologin" /etc/passwd | head -n10 | sort -t: -k7 > lista_ordenada
+cat lista_ordenada 
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+git status
+cat >> README.md << FIN
+Alumno: Martin Schiulaz
+Division: 116
+Turno: mañana
+FIN
+
+git add .
+git commit -m "docs: agregar informacion del alumno"
+mkdir -p ~/TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+tree ~/TP1
+ls -R ~/TP1
+sudo apt install tree
+sudo apt update
+sudo apt install tree
+tree ~/TP1
+cd ~
+tree TP1/
+cd ~/repogit/AySO
+nano script_dir.sh
+cat > script_dir.sh << FIN
+mkdir -p ~/TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+FIN
+
+chmod +x script_dir.sh
+cat script_dir.sh 
+ls -l script_dir.sh 
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
